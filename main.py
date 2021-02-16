@@ -18,6 +18,7 @@ client.start()
 async def main():
     while True:
         await client.send_message(my_channel, message)
+		print('message sended:', str(message))
         sleep(7)
 
 with client:
