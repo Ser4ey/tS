@@ -18,7 +18,6 @@ client.start()
 async def main():
     while True:
         await client.send_message(my_channel, message)
-		print('message sended:', str(message))
 
 with client:
     client.loop.run_until_complete(main())
